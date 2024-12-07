@@ -11,7 +11,7 @@
         {% if post.published %}
             <h2>{{post.title}}</h2>
             <h3>Автор:{{post.author}}</h3>
-            <a href="">Читати більше</a>
+            <a href="{{ post.get_absolute_url }}">Читати більше</a>
             <hr>
         {% endif %}
     {% endfor %}
